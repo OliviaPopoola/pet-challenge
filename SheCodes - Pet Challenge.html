@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@400;500;700;900&family=Roboto:wght@100;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Poppins:wght@100;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+
+    <title>🐾 montipetcare.co: Winter pet care</title>
+    <style>
+      body {
+        background-color: rgba(233, 218, 201, 0.4);
+        margin: 0 auto;
+        line-height: 250%;
+        color: rgb(47, 79, 79);
+        cursor: auto;
+      }
+      h1 {
+        color: rgb(134, 207, 175);
+        font-family: "Gothic A1", sans-serif;
+        text-align: center;
+        font-size: 100px;
+        margin: 40px auto;
+      }
+      p {
+        font-family: "poppins", sans-serif;
+        font-size: 18px;
+      }
+      a {
+        color: darkseagreen;
+        text-decoration: none;
+      }
+      a:visited {
+        color: darkslategrey;
+      }
+      a:hover{
+        color: rgb(125, 153, 179);
+      }
+      button {
+        display: block;
+        margin: 0 auto;
+        border-radius: 25px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        box-shadow: 5px 5px rgba(0, 0, 0, 0.1);
+        background-color: rgb(128, 196, 196);
+        font-family: "poppins", sans-serif;
+        width: 200px;
+              transition: all 200ms ease-in-out;
+      }
+      button:hover {
+        background-color: rgb(112, 212, 212);
+        color: whitesmoke;
+      }
+      .logo {
+        height: 70px;
+        max-height: 100px;
+      }
+      .opening {
+        font-family: "Gothic A1", sans-serif;
+        color: darkslateblue;
+        font-size: 30px;
+        text-align: center;
+        margin: 15px auto;
+        margin-bottom: 60px;
+      }
+      .navbar {
+        font-family: "poppins", sans-serif;
+      }
+      .search-input {
+        height: 40px;
+        margin: auto;
+      }
+      .nav-button {
+        background-color: rgb(143, 204, 204);
+        margin: auto;
+      }
+      .text-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .sub-heading {
+        font-size: 45px;
+        font-weight: 800;
+        margin-bottom: 25px;
+        color: rgb(240, 130, 172);
+        font-family: "Gothic A1", sans-serif;
+        text-decoration: underline wavy rgb(168, 213, 168);
+        transition: all 200ms ease-in-out;
+      }
+      .sub-heading:hover {
+        color: rgb(34, 178, 161);
+        text-decoration: underline wavy rgb(128, 164, 128);
+      }
+      .pet-icon {
+        margin-right: 5px;
+        margin-bottom: 7px;
+      }
+      .main {
+      
+        display: block;
+        margin: 0 auto;
+        border-radius: 80px;
+      }
+      .cat-img {
+        margin-left: 35px;
+      }
+      .dog-img {
+        margin-right: 35px;
+      }
+      .main-container {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 45px;
+      }
+      .img-container {
+        display: flex;
+        justify-content: space-evenly;
+        margin: 50px 70px;
+      }
+      .sponsor-tagline{
+        font-family: "Gothic A1", sans-serif;
+        color: darkslateblue;
+       font-size: px;
+        margin: 15px auto;
+        margin-bottom: 30px;
+      }
+
+.sponsor-container{
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 60px;
+      
+}
+.card{
+  border-radius:2.375rem;
+  width:300px
+}
+.card-body{
+  height:330px;
+}
+.sponsor-img{
+  height: 300px;
+}
+
+.card-title{
+  text-align: center;
+  font-family: "poppins", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+
+}
+.card-text{font-size: 14px;}
+      .footer {
+        font-family: "Gothic A1", sans-serif;
+        font-weight: 600px;
+        text-align: center;
+      }
+      .footer:hover {
+        color: indianred;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navbar navbar-expand-lg bg-clear">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/057/816/original/3775229_animal_canine_cat_dog_pet_icon.png?1670796571"
+              alt="pet-care-logo"
+              class="logo"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <!-- nav bar drop down start -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Services
+              </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Buy a pet</a></li>
+                  <li><a class="dropdown-item"href="#">Training</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Accessories</a>
+                  </li>
+                </ul>
+              </li>
+              <li>  
+    </li>
+              <li class="nav-item">
+                <a class="nav-link"> 🐾 Donations</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2 search-input"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-dark nav-button" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <!-- nav bar end -->
+
+      <div class="content-container">
+        <h1 class="header">Winter pet care</h1>
+        <div class="opening">
+          A British winter can be tough on animals, but there are plenty of
+          things you can do to help.
+          <br />
+          Even small actions can sometimes make a big difference!
+        </div>
+        <!-- start of text container -->
+
+        <div class="main-container">
+          <div class="text-container">
+            <div class="sub-heading">
+              <img
+                class="pet-icon"
+                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/058/055/original/9026293_cat_thin_icon.png?1670861321"
+                alt="cat-icon"
+                width="50"
+              />
+              Keeping cats warm
+            </div>
+            <p>
+              Check your feline friend's bedding is away from cold draughts and
+              stays warm and dry. In the coldest months, it's important that
+              your cat has access to a
+              <a
+                href="https://www.rspca.org.uk/adviceandwelfare/pets/cats/environment"
+                target="_blank"
+              >
+                warm environment,</a
+              >
+              such as your home or another heated indoor area. Be aware that
+              antifreeze and rock salt can be poisonous to pets. Learn more
+              about
+              <a
+                class="antifreeze-link"
+                href="https://www.rspca.org.uk/adviceandwelfare/pets/cats/health/poisoning/antifreeze"
+                target="_blank"
+              >
+                antifreeze poisoning in cats.</a
+              >
+              Check under your car for sleeping cats In cold weather, cats may
+              decide to take shelter under your car, including crawling under
+              the bonnet and wheel arches to soak up the warmth from the car
+              engine and tyres. Before setting off in your car, make sure you
+              tap the bonnet of your car and check around the wheels and on top
+              of the tyres before you start the engine and drive.
+            </p>
+          </div>
+          <img
+            class="main cat-img"
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/057/792/original/cat-main.jpg?1670793639"
+            alt="cat-reaching-up"
+            width="300px"
+            height="400px"
+          />
+        </div>
+        <!-- start of dog care -->
+        <div class="main-container">
+          <img
+            class="main dog-img"
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/057/796/original/alvan-nee-eoqnr8ikwFE-unsplash.jpg?1670794975"
+            alt="corgi-sitting-up"
+            width="300px"
+            height="400px"
+          />
+          <div class="text-container">
+            <div class="sub-heading">
+              <img
+                class="pet-icon"
+                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/058/054/original/9026546_dog_thin_icon.png?1670861311"
+                alt="dog-icon"
+                width="50"
+              />
+              Walking dogs in winter
+            </div>
+            <p>
+              If you have an
+              <a
+                href="https://www.rspca.org.uk/-/blog_six_tips_for_walking_your_elderly_dog"
+                target="_blank"
+              >
+                elderly or sickly dog,</a
+              >
+              buy a special coat or jumper to keep them warm. Stay safe when
+              walking your dog in the dark. Wear reflective clothing and think
+              about a reflective collar or light for your dog's collar. Keep
+              your dogs away from ponds and lakes that are iced over - thin ice
+              may break under a dog's weight. If it's snowing outside, watch out
+              for your dogs' paws becoming compacted with snow, which is
+              uncomfortable for them. Be aware that antifreeze and rock salt can
+              be poisonous to pets. Wash their paws thoroughly after walking
+              your dog in areas that may have been gritted with rock salt.
+            </p>
+          </div>
+        </div>
+        <!-- end of dog care -->
+        <hr />
+        <!-- the beginning of sponsoring a pet(selection of 3) -->
+        <div class="sub-heading pt-3">
+              <img
+                class="pet-icon"
+                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/058/261/original/9026802_gift_thin_icon.png?1670939977"
+                alt="gift-icon"
+                width="50"
+              />
+              Sponsor a pet this winter
+            </div>
+<p class="sponsor-tagline">It couldn't be easier to sponsor a pet in our care, or to gift a sponsorship to a friend or loved one for as little as £1 per week* (£4.34 per month).</p>
+<div class="row row-cols-1 row-cols-md-3 g-4 sponsor-container">
+  <div class="col">
+    <div class="card" >
+      <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/058/313/original/seth-doyle-sXU6BeWoZqI-unsplash.jpg?1670952583"class="card-img-top sponsor-img" alt="lewis-dog">
+      <div class="card-body">
+        <h5 class="card-title">Howdy! I'm Lewis</h5>
+        <p class="card-text"> Meeting new people makes me quite nervous, but once I’m comfortable around someone my loving personality comes out!I love playing with tennis balls and speeding around as fast as I can.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/058/316/original/trac-vu-x7LaywGPAtE-unsplash.jpg?1670953025" class="card-img-top sponsor-img" alt="misty-cat">
+      <div class="card-body">
+        <h5 class="card-title">Hi! I'm Misty</h5>
+        <p class="card-text">Despite being a little shy when I first meet people, once you get to know me you will see just how loving I am!</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/058/315/original/ben-stones-sQ-4oMU9uKk-unsplash.jpg?1670952883" class="card-img-top sponsor-img" alt="smudge-dog">
+      <div class="card-body">
+        <h5 class="card-title">Hey! I'm Smudge.</h5>
+        <p class="card-text">I’m a cheeky and energetic girl, who loves spending quality time with my carers for a bit of a cuddle and fuss. I’m a little nervous at meeting new people, but it doesn’t take long to win me over – especially if there are treats involved!</p>
+      </div>
+    </div>
+  </div>
+</div>
+        <!-- end of text container -->
+      <!-- sponsor button & footer section -->
+        <button id="sponsor-button"> <img src="
+https://s3.amazonaws.com/shecodesio-production/uploads/files/000/058/262/original/9026918_paw_print_thin_icon.png?1670940388" alt="paw-icon" width="30"> 
+           <br> Sponsor a pet</button>
+      <div class="footer">
+        <a href="https://www.linkedin.com/in/olivia-popoola-095op" target="_blank"><img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/058/058/original/9026840_linkedin_logo_thin_icon.png?1670861656"
+          alt="linkedin"
+          width="30"
+        /></a><a href="https://github.com/OliviaPopoola" target="_blank">
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/058/057/original/9026804_github_logo_thin_icon.png?1670861626"
+          alt="github"
+          width="30"
+        /></a><a href="https://www.instagram.com/livvy.codes/" target="_blank">
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/058/056/original/9026811_instagram_logo_thin_icon.png?1670861619"
+          alt="instagram"
+          width="30"
+        /></a>
+        <br />
+        made with 💗 by <a href="https://github.com/OliviaPopoola" target="_blank">  Olivia</a>
+      </div>
+    </div>
+    <script>
+      function contactUs() {
+        let name = prompt("What is your name?");
+        name=name.trim()
+        let email = prompt("What is your email?");
+        
+
+        let h1 = document.querySelector("h1");
+// if (name === 0) prompt("Please enter your name");
+        if (email) h1.innerHTML = "Hi! " + name + ", We will get back to you!";
+        else {
+          h1.innerHTML = "Sorry! " + name + ", Please put in your email!";
+        }
+      }
+
+      let sponsorButton = document.querySelector("#sponsor-button");
+      sponsorButton.addEventListener("click", contactUs);
+      
+      </script>
+</body>
+</html>
